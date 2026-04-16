@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stage Groupama — Lazare RIGAUD-VIN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .stage-detail-hero {
+      padding: 9rem 0 4rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .stage-detail-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    .stage-detail-hero .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.4rem; }
+    .meta-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+    .detail-content { padding: 5rem 0; }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .detail-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+      margin-top: 3rem;
+    }
+    .detail-body h2:first-child { margin-top: 0; }
+    .detail-body p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .detail-body strong { color: var(--text); }
+    pre {
+      background: #0d0d15;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+      overflow-x: auto;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: #a8b4ff;
+      margin: 1.5rem 0;
+    }
+    code { font-family: 'Courier New', monospace; }
+    .keyword { color: #7c5cff; }
+    .type-col { color: #4f8eff; }
+    .comment { color: #4a4a6a; font-style: italic; }
+    .string-col { color: #63d68d; }
+
+    .sidebar-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: sticky;
+      top: 5rem;
+    }
+    .sidebar-card h3 {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .sidebar-list li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      padding-left: 1rem;
+      border-left: 2px solid var(--border);
+    }
+    .sidebar-list li.done {
+      border-left-color: var(--accent);
+      color: var(--text);
+    }
+    .sidebar-list li.partial {
+      border-left-color: #f59e0b;
+    }
+    .sidebar-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 1.5rem 0;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 1.5rem;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .detail-grid { grid-template-columns: 1fr; }
+      .sidebar-card { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">LRV</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#projets">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <div class="stage-detail-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> / <a href="index.html#projets">Projets</a> / Stage Groupama
+      </div>
+      <div class="section-label">Stage BTS SIO · 2025</div>
+      <h1>Application de gestion<br>de <span class="accent">projets informatiques</span></h1>
+      <div class="meta">
+        <span class="meta-item"><span class="meta-dot"></span>Groupama Centre-Atlantique · Niort</span>
+        <span class="meta-item"><span class="meta-dot"></span>26 mai – 27 juin 2025</span>
+        <span class="meta-item"><span class="meta-dot"></span>C# · ASP.NET Blazor · SQL Server</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-content">
+    <div class="container">
+      <div class="detail-grid">
+
+        <div class="detail-body">
+
+          <h2>Contexte et objectif</h2>
+          <p>Durant mon stage de 5 semaines au sein de la <strong>DSI de Groupama Centre-Atlantique</strong>, j'ai été chargé de développer une application web interne. L'objectif était de centraliser la gestion du cycle de vie des projets informatiques, en remplaçant plusieurs outils disparates (ServiceNow, Lists, Outlook, Teams, Microsoft Project) par une seule interface unifiée.</p>
+          <p>L'application devait gérer les <strong>demandes</strong> (création, suivi, priorisation), les <strong>projets</strong> (intervenants, météo, tâches), les <strong>tests</strong> et le <strong>suivi des temps</strong>.</p>
+
+          <h2>Semaine 1 : Autoformation</h2>
+          <p>La première semaine a été consacrée à l'autoformation via des playlists YouTube de mon tuteur <strong>Christophe ASJEME</strong>. J'ai découvert :</p>
+          <p>— <strong>C# et .NET</strong> : types de données, conditions, boucles, POO, collections, LINQ, async/await</p>
+          <p>— <strong>Sécurité ASP.NET</strong> : JWT (JSON Web Tokens), ASP.NET Identity, gestion des rôles et des droits d'accès</p>
+          <p>Ce format purement vidéo, bien qu'instructif, a montré ses limites sans exercices pratiques. La vraie montée en compétences est venue avec le projet concret.</p>
+
+          <h2>Semaine 2–5 : Développement</h2>
+          <p>Face à la complexité du cahier des charges, j'ai ciblé un premier cas d'utilisation : <strong>l'affichage d'une liste de demandes</strong> depuis une base de données.</p>
+
+          <p><strong>Étape 1 — Modélisation de la base de données</strong></p>
+          <p>J'ai créé une table <code>Demandes</code> dans SQL Server via SSMS, avec les champs nécessaires :</p>
+
+          <pre><code><span class="comment">-- Création de la table Demande</span>
+<span class="keyword">CREATE TABLE</span> <span class="type-col">Demande</span> (
+    Id           <span class="type-col">INT</span> <span class="keyword">PRIMARY KEY IDENTITY</span>,
+    NomDemande   <span class="type-col">NVARCHAR</span>(255),
+    Description  <span class="type-col">NVARCHAR</span>(MAX),
+    DateDemande  <span class="type-col">DATETIME</span>,
+    Etat         <span class="type-col">NVARCHAR</span>(100),
+    Direction    <span class="type-col">NVARCHAR</span>(100)
+);</code></pre>
+
+          <p><strong>Étape 2 — Modèle C# et connexion EF Core</strong></p>
+          <p>J'ai créé un modèle <code>Demande.cs</code> et configuré Entity Framework Core pour connecter l'application à SQL Server :</p>
+
+          <pre><code><span class="comment">// Program.cs — Configuration de la connexion</span>
+<span class="keyword">using</span> <span class="type-col">Microsoft.EntityFrameworkCore</span>;
+
+builder.Services.AddDbContext&lt;<span class="type-col">MonContexte</span>&gt;(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString(<span class="string-col">"MaConnexion"</span>)
+    ));</code></pre>
+
+          <p><strong>Étape 3 — Vue Blazor / Razor</strong></p>
+          <p>J'ai créé un composant <code>.razor</code> pour afficher les demandes dynamiquement depuis la base de données, en parcourant les données avec une boucle <code>@foreach</code> :</p>
+
+          <pre><code><span class="comment">@* Composant Blazor — Affichage des demandes *@</span>
+<span class="keyword">@foreach</span> (<span class="keyword">var</span> demande <span class="keyword">in</span> demandes)
+{
+    &lt;<span class="type-col">div</span> class=<span class="string-col">"demande-card"</span>&gt;
+        &lt;<span class="type-col">h3</span>&gt;@demande.NomDemande&lt;/<span class="type-col">h3</span>&gt;
+        &lt;<span class="type-col">p</span>&gt;@demande.Description&lt;/<span class="type-col">p</span>&gt;
+        &lt;<span class="type-col">span</span>&gt;@demande.Etat&lt;/<span class="type-col">span</span>&gt;
+    &lt;/<span class="type-col">div</span>&gt;
+}</code></pre>
+
+          <h2>Difficultés rencontrées</h2>
+          <p>Les principales difficultés ont été la <strong>configuration de l'environnement</strong> (erreurs de connexion SQL depuis Visual Studio), la compréhension d'un document d'expression de besoin professionnel, et la prise en main d'ASP.NET Blazor sans expérience préalable. Ces obstacles ont été surmontés en décomposant le problème, en utilisant SSMS directement, et en allant chercher les ressources nécessaires.</p>
+
+          <h2>Bilan et apprentissages</h2>
+          <p>Ce stage m'a permis de réaliser mon <strong>premier développement web professionnel complet</strong>, de la base de données à l'affichage. J'ai acquis une vision concrète du cycle de développement d'une application en entreprise et confirmé mon intérêt pour le <strong>développement logiciel</strong>.</p>
+
+        </div>
+
+        <div>
+          <div class="sidebar-card">
+            <h3>Avancement</h3>
+            <ul class="sidebar-list">
+              <li class="done">✓ Autoformation C# / .NET</li>
+              <li class="done">✓ Analyse du cahier des charges</li>
+              <li class="done">✓ Création table SQL Server</li>
+              <li class="done">✓ Connexion EF Core</li>
+              <li class="done">✓ Affichage Blazor des demandes</li>
+              <li class="partial">⟳ CRUD complet des demandes</li>
+              <li>○ Module projets</li>
+              <li>○ Gestion des rôles</li>
+              <li>○ Module tests</li>
+              <li>○ Suivi des temps</li>
+            </ul>
+            <div class="sidebar-divider"></div>
+            <h3>Technologies</h3>
+            <ul class="sidebar-list">
+              <li class="done">C# / .NET 8</li>
+              <li class="done">ASP.NET Blazor</li>
+              <li class="done">SQL Server (SSMS)</li>
+              <li class="done">Entity Framework Core</li>
+              <li class="done">Razor Pages</li>
+              <li class="done">Visual Studio 2022</li>
+            </ul>
+            <div class="sidebar-divider"></div>
+            <a href="index.html" class="back-link">← Retour au portfolio</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2025 Lazare RIGAUD-VIN — BTS SIO</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
