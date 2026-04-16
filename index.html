@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio BTS SIO - Lazare Rigaud-vin</title>
+  <meta name="description" content="Portfolio BTS SIO de Lazare Rigaud-vin : projets, compétences, stages et contact." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #243043;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e293b, #0f172a);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 16px auto 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.9);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 999px;
+      background: #1e293b;
+      color: var(--text);
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+    }
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lazare Rigaud-vin</h1>
+    <p>Étudiant en BTS SIO - Portfolio de présentation, projets, compétences et expériences.</p>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <div class="card">
+      <p>
+        Je suis étudiant en BTS SIO, passionné par le développement web et l’informatique.
+        Ce portfolio présente mes projets, mes compétences et mon évolution au fil de ma formation.
+      </p>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Développement</h3>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Java</span>
+      </div>
+      <div class="card">
+        <h3>Base de données</h3>
+        <span class="tag">SQL</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">PL/SQL</span>
+      </div>
+      <div class="card">
+        <h3>Outils</h3>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Eclipse</span>
+        <span class="tag">Android Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2>Projets</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Projet 1</h3>
+        <p>Développement d’un site ou d’une application web avec interface moderne et responsive.</p>
+        <a class="project-link" href="#">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>Projet 2</h3>
+        <p>Création d’une base de données et réalisation de requêtes SQL pour gérer des données.</p>
+        <a class="project-link" href="#">Voir le projet</a>
+      </div>
+      <div class="card">
+        <h3>Projet 3</h3>
+        <p>Travail sur un projet BTS SIO lié au développement, à la maintenance ou à la gestion d’application.</p>
+        <a class="project-link" href="#">Voir le projet</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email : lazare.rigaud-vin@veniseverteniort.org</p>
+      <p>GitHub : <a class="project-link" href="https://github.com/">Mon profil</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Portfolio BTS SIO</p>
+  </footer>
+</body>
+</html>
