@@ -1,334 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lazare RIGAUD-VIN — Portfolio BTS SIO</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lazare Rigaud-Vin - BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-logo">LRV</div>
-    <ul class="nav-links">
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#stage">Stage</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle">☰</button>
-  </nav>
+    <section id="accueil">
+        <div class="hero">
+            <h1>Lazare Rigaud-Vin</h1>
+            <p>Étudiant en BTS SIO - Spécialité SLAM</p>
+            <p>Développeur web passionné par Java, SQL et les applications métiers.</p>
+        </div>
+    </section>
 
-  <!-- HERO -->
-  <section id="accueil" class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-tag">BTS SIO · SISR / SLAM</div>
-      <h1 class="hero-name">Lazare<br><span class="accent">RIGAUD-VIN</span></h1>
-      <p class="hero-desc">Étudiant en BTS SIO passionné par le développement logiciel et les systèmes d'information. En quête d'expériences pour construire mon avenir dans l'informatique.</p>
-      <div class="hero-cta">
-        <a href="#projets" class="btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn-secondary">Me contacter</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hero-card-photo">
-          <img src="photo.jpg" alt="Lazare RIGAUD-VIN" onerror="this.parentElement.classList.add('no-photo')">
-          <span class="photo-placeholder">LRV</span>
-        </div>
-        <div class="hero-card-info">
-          <p class="card-name">Lazare RIGAUD-VIN</p>
-          <p class="card-role">Développeur junior · Niort</p>
-          <div class="card-tags">
-            <span>C#</span><span>ASP.NET</span><span>SQL</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    <section id="parcours">
+        <h2>Mon Parcours</h2>
+        <ul>
+            <li>Étudiant BTS SIO au Lycée de Cholet, Pays de la Loire.</li>
+            <li>Formation en développement web (PHP, Next.js), Java Swing et bases de données SQL/PL-SQL.</li>
+            <li>Projets personnels : applications Android avec Capacitor, GUIs événementielles.</li>
+        </ul>
+    </section>
 
-  <!-- À PROPOS -->
-  <section id="apropos" class="section apropos">
-    <div class="container">
-      <div class="section-label">01 — À propos</div>
-      <div class="apropos-grid">
-        <div class="apropos-text">
-          <h2>Qui suis-je ?</h2>
-          <p>Je suis étudiant en <strong>BTS Services Informatiques aux Organisations (SIO)</strong> à <strong>[Nom de ton établissement]</strong>, basé à Cholet. Je me forme aux métiers du développement logiciel et des réseaux informatiques.</p>
-          <p>Mon stage de 5 semaines chez <strong>Groupama Centre-Atlantique</strong> à Niort m'a permis de découvrir le développement d'application web en environnement professionnel, en travaillant avec C#, ASP.NET Blazor et SQL Server.</p>
-          <p>Je suis particulièrement attiré par le <strong>développement d'applications</strong> et la <strong>gestion de projets informatiques</strong>.</p>
-          <div class="apropos-facts">
-            <div class="fact"><span class="fact-num">5</span><span class="fact-label">semaines de stage</span></div>
-            <div class="fact"><span class="fact-num">2</span><span class="fact-label">ans de BTS SIO</span></div>
-            <div class="fact"><span class="fact-num">1</span><span class="fact-label">application développée</span></div>
-          </div>
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="competences-grid">
+            <div class="comp-item">HTML/CSS/JS</div>
+            <div class="comp-item">Java & Swing</div>
+            <div class="comp-item">SQL/PL-SQL</div>
+            <div class="comp-item">PHP/Next.js</div>
+            <div class="comp-item">Eclipse/SQL Developer</div>
+            <div class="comp-item">Git/GitHub</div>
         </div>
-        <div class="apropos-timeline">
-          <h3>Parcours</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">2024 – 2026</span>
-                <p class="timeline-title">BTS SIO</p>
-                <p class="timeline-sub">[Nom de ton établissement] · Cholet</p>
-              </div>
+    </section>
+
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="projets-grid">
+            <div class="projet">
+                <h3>App Android Next.js</h3>
+                <p>Application mobile avec Capacitor et Android Studio.</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Mai – Juin 2025</span>
-                <p class="timeline-title">Stage — Groupama Centre-Atlantique</p>
-                <p class="timeline-sub">Développement d'application web · Niort</p>
-              </div>
+            <div class="projet">
+                <h3>GUI Java Swing</h3>
+                <p>Interface événementielle pour gestion de données.</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">2024</span>
-                <p class="timeline-title">Baccalauréat</p>
-                <p class="timeline-sub">[Filière] · [Établissement]</p>
-              </div>
+            <div class="projet">
+                <h3>Base SQL Avancée</h3>
+                <p>Procédures et triggers PL/SQL pour SI métier.</p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- COMPÉTENCES -->
-  <section id="competences" class="section competences">
-    <div class="container">
-      <div class="section-label">02 — Compétences</div>
-      <h2>Mes compétences</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Développement</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">C# / .NET</span><div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">ASP.NET Blazor</span><div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">PHP</span><div class="skill-bar"><div class="skill-fill" style="--w:[XX]%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Base de données</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">SQL Server (SSMS)</span><div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:[XX]%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Entity Framework</span><div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Outils & Environnement</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">Visual Studio</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">ServiceNow</span><div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Réseaux & Systèmes</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">Administration Windows</span><div class="skill-bar"><div class="skill-fill" style="--w:[XX]%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Réseaux TCP/IP</span><div class="skill-bar"><div class="skill-fill" style="--w:[XX]%"></div></div></div>
-            <div class="skill-item"><span class="skill-name">Linux (bases)</span><div class="skill-bar"><div class="skill-fill" style="--w:[XX]%"></div></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Cholet, Pays de la Loire, France</p>
+        <p>Email : votre-email@example.com</p>
+        <p>LinkedIn/GitHub : liens à ajouter</p>
+    </section>
 
-  <!-- PROJETS -->
-  <section id="projets" class="section projets">
-    <div class="container">
-      <div class="section-label">03 — Projets</div>
-      <h2>Mes projets</h2>
-      <div class="projects-grid">
-
-        <!-- PROJET STAGE -->
-        <div class="project-card featured">
-          <div class="project-header">
-            <span class="project-badge">Stage Groupama</span>
-            <span class="project-year">2025</span>
-          </div>
-          <h3>Application de gestion de projets</h3>
-          <p>Développement d'une application web interne pour remplacer plusieurs outils (ServiceNow, Lists, Teams) par une solution centralisée de gestion du cycle de vie des projets informatiques.</p>
-          <div class="project-tech">
-            <span>C#</span><span>ASP.NET Blazor</span><span>SQL Server</span><span>Entity Framework</span><span>Razor Pages</span>
-          </div>
-          <div class="project-details">
-            <div class="project-detail"><strong>Contexte</strong> Groupama Centre-Atlantique — DSI</div>
-            <div class="project-detail"><strong>Durée</strong> 4 semaines de développement</div>
-            <div class="project-detail"><strong>Rôle</strong> Développeur seul, encadré par tuteur</div>
-          </div>
-          <a href="stage.html" class="project-link">Voir le détail →</a>
-        </div>
-
-        <!-- PROJET GITHUB -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Projet personnel</span>
-            <span class="project-year">2025</span>
-          </div>
-          <h3>Candidature — [Nom à compléter]</h3>
-          <p>[Description du projet GitHub à compléter — qu'est-ce que fait ce projet ? Une application de gestion de candidatures ? Un site vitrine ?]</p>
-          <div class="project-tech">
-            <span>[Techno 1]</span><span>[Techno 2]</span>
-          </div>
-          <a href="https://github.com/lazarerigaud-vin-hash/candidature" target="_blank" class="project-link">Voir sur GitHub →</a>
-        </div>
-
-        <!-- PROJET SCOLAIRE -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Projet scolaire</span>
-            <span class="project-year">2024–2025</span>
-          </div>
-          <h3>[Nom du projet BTS]</h3>
-          <p>[Description d'un projet réalisé en cours — TP réseau, site web, application, etc. À compléter avec tes projets scolaires.]</p>
-          <div class="project-tech">
-            <span>[Techno]</span><span>[Techno]</span>
-          </div>
-          <a href="#" class="project-link">En savoir plus →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- STAGE -->
-  <section id="stage" class="section stage-section">
-    <div class="container">
-      <div class="section-label">04 — Stage</div>
-      <h2>Mon stage chez Groupama</h2>
-      <div class="stage-grid">
-        <div class="stage-company">
-          <div class="stage-logo-block">
-            <div class="stage-logo-placeholder">GCA</div>
-            <div>
-              <h3>Groupama Centre-Atlantique</h3>
-              <p>Caisse régionale · Niort (79)</p>
-            </div>
-          </div>
-          <div class="stage-infos">
-            <div class="stage-info-item"><span class="stage-info-label">Période</span><span>26 mai — 27 juin 2025</span></div>
-            <div class="stage-info-item"><span class="stage-info-label">Service</span><span>DSI — Développement section nord</span></div>
-            <div class="stage-info-item"><span class="stage-info-label">Tuteur</span><span>Christophe ASJEME, Coordinateur Développement</span></div>
-            <div class="stage-info-item"><span class="stage-info-label">Secteur</span><span>Assurance mutualiste · 10 départements</span></div>
-          </div>
-        </div>
-        <div class="stage-missions">
-          <h3>Missions réalisées</h3>
-          <div class="mission-list">
-            <div class="mission">
-              <div class="mission-num">01</div>
-              <div class="mission-text">
-                <strong>Autoformation C# et sécurité ASP.NET</strong>
-                <p>Découverte du langage C#, .NET, programmation orientée objet, JWT et ASP.NET Identity via playlists YouTube du tuteur.</p>
-              </div>
-            </div>
-            <div class="mission">
-              <div class="mission-num">02</div>
-              <div class="mission-text">
-                <strong>Analyse du cahier des charges</strong>
-                <p>Lecture et compréhension d'une expression de besoin pour une application de gestion de projets.</p>
-              </div>
-            </div>
-            <div class="mission">
-              <div class="mission-num">03</div>
-              <div class="mission-text">
-                <strong>Création de la base de données</strong>
-                <p>Modélisation et création d'une table SQL Server (SSMS) pour stocker les demandes.</p>
-              </div>
-            </div>
-            <div class="mission">
-              <div class="mission-num">04</div>
-              <div class="mission-text">
-                <strong>Développement de l'interface d'affichage</strong>
-                <p>Création d'une vue Blazor en C# connectée à SQL Server via Entity Framework pour afficher les demandes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="stage-bilan">
-        <h3>Ce que j'ai appris</h3>
-        <div class="bilan-tags">
-          <span>Architecture ASP.NET</span>
-          <span>Connexion BDD ↔ application</span>
-          <span>Razor Pages / Blazor</span>
-          <span>Entity Framework Core</span>
-          <span>Cycle de développement professionnel</span>
-          <span>Lecture d'une expression de besoin</span>
-          <span>Travail en équipe DSI</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="section-label">05 — Contact</div>
-      <div class="contact-grid">
-        <div class="contact-text">
-          <h2>Travaillons<br>ensemble.</h2>
-          <p>Vous avez une opportunité, un projet ou simplement envie d'échanger ? N'hésitez pas à me contacter.</p>
-          <div class="contact-links">
-            <a href="mailto:[TON_EMAIL]@gmail.com" class="contact-link">
-              <span class="contact-icon">✉</span>
-              <span>[TON_EMAIL]@gmail.com</span>
-            </a>
-            <a href="https://github.com/lazarerigaud-vin-hash" target="_blank" class="contact-link">
-              <span class="contact-icon">⌥</span>
-              <span>github.com/lazarerigaud-vin-hash</span>
-            </a>
-            <a href="https://linkedin.com/in/[TON_LINKEDIN]" target="_blank" class="contact-link">
-              <span class="contact-icon">in</span>
-              <span>LinkedIn — [Ton nom]</span>
-            </a>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Envoyer le message</button>
-          <p class="form-note">* Le formulaire est à configurer avec Formspree ou EmailJS (voir README)</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <p>© 2025 Lazare RIGAUD-VIN — BTS SIO</p>
-      <p>Fait avec passion, du C# et beaucoup de café ☕</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
