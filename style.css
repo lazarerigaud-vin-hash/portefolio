@@ -110,3 +110,130 @@ footer {
         padding: 3rem 1rem;
     }
 }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      background: #f5f5f3;
+      color: #1a1a1a;
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .section-sub {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border: 0.5px solid rgba(0,0,0,0.12);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.15s;
+    }
+
+    .card:hover {
+      border-color: rgba(0,0,0,0.25);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 500;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .badge-cyber  { background: #EEEDFE; color: #3C3489; }
+    .badge-web    { background: #E1F5EE; color: #085041; }
+    .badge-sql    { background: #FAEEDA; color: #633806; }
+    .badge-java   { background: #FAECE7; color: #712B13; }
+    .badge-php    { background: #E6F1FB; color: #0C447C; }
+
+    .divider {
+      height: 0.5px;
+      background: rgba(0,0,0,0.1);
+      margin: 2px 0;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card p code {
+      font-family: monospace;
+      font-size: 12px;
+      background: #f0f0f0;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 8px;
+      background: #f5f5f3;
+      color: #666;
+      border: 0.5px solid rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 0.5px solid rgba(0,0,0,0.2);
+      color: #1a1a1a;
+      text-decoration: none;
+      background: transparent;
+      cursor: pointer;
+      margin-top: 4px;
+      width: fit-content;
+      transition: background 0.15s;
+    }
+
+    .btn:hover {
+      background: #f5f5f3;
+    }
