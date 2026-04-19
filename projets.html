@@ -1,237 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mes Projets</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: sans-serif;
-      background: #f5f5f3;
-      color: #1a1a1a;
-      padding: 2rem;
-    }
-
-    .section-title {
-      font-size: 28px;
-      font-weight: 500;
-      margin-bottom: 0.25rem;
-    }
-
-    .section-sub {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: #fff;
-      border: 0.5px solid rgba(0,0,0,0.12);
-      border-radius: 12px;
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      transition: border-color 0.15s;
-    }
-
-    .card:hover {
-      border-color: rgba(0,0,0,0.25);
-    }
-
-    .card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 8px;
-    }
-
-    .card h3 {
-      font-size: 15px;
-      font-weight: 500;
-      color: #1a1a1a;
-      line-height: 1.4;
-    }
-
-    .badge {
-      font-size: 11px;
-      padding: 3px 8px;
-      border-radius: 8px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .badge-cyber  { background: #EEEDFE; color: #3C3489; }
-    .badge-web    { background: #E1F5EE; color: #085041; }
-    .badge-sql    { background: #FAEEDA; color: #633806; }
-    .badge-java   { background: #FAECE7; color: #712B13; }
-    .badge-php    { background: #E6F1FB; color: #0C447C; }
-
-    .divider {
-      height: 0.5px;
-      background: rgba(0,0,0,0.1);
-      margin: 2px 0;
-    }
-
-    .card p {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    .card p code {
-      font-family: monospace;
-      font-size: 12px;
-      background: #f0f0f0;
-      padding: 1px 4px;
-      border-radius: 4px;
-    }
-
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .tag {
-      font-size: 11px;
-      padding: 2px 7px;
-      border-radius: 8px;
-      background: #f5f5f3;
-      color: #666;
-      border: 0.5px solid rgba(0,0,0,0.1);
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      padding: 6px 12px;
-      border-radius: 8px;
-      border: 0.5px solid rgba(0,0,0,0.2);
-      color: #1a1a1a;
-      text-decoration: none;
-      background: transparent;
-      cursor: pointer;
-      margin-top: 4px;
-      width: fit-content;
-      transition: background 0.15s;
-    }
-
-    .btn:hover {
-      background: #f5f5f3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Mon CV</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <p class="section-title">Mes projets</p>
-  <p class="section-sub">Projets réalisés en formation et en stage</p>
+    <main>
+        <h1>Mes Projets</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Doc word piège (rick roll)</h3>
+                <p>
+                    C'est un document piéger qui déclenche un rick roll quand il est ouvert
+                    Je l'ait réaliser a la suite d'un exercice de mon professeur de cybersécurité, ou il demandait de le piéger en le rickrollant.
+                    j'ai créer ce document piéger en utilisant une extention de document word appeler .docm qui ma permis de lancer du code et donc d'ouvrir une vidéo youtube. 
+                </p>
+                <a href="rickroll.docm" download class="btn">Télécharger le fichier</a>
+            </div>
+            <div class="card">
+                <h3>application de gestion de données</h3>
+                <p>
+                    Cette application étaient une demande de mon tuteur de stage chez croupama.
+                    l'pplication devaint géré des taches 
+                </p>
+            </div>
+            <div class="card">
+                <h3>Site sur la guerre de cent ans</h3>
+                <p>Un site présentent la geuerre de cent ans</p>
+            </div>
+            <div class="card">
+                <h3>Base SQL Avancée</h3>
+                <p>Procédures et triggers PL/SQL pour SI métier.</p>
+            </div>
+            <div class="card">
+                <h3>Un Site de candidature de stage</h3>
+                <p>page de candidature de stage (seulement front end)</p>
+            </div>
+            <div class="card">
+                <h3>Projet de site php Mamédiathèque</h3>
+                <p>site de médiathèque permmettant de réserver et créer des objet et profils d'utilisateur</p>
+            </div>
+            <div class="card">
+                <h3>Projet d'application java Mamédiathèque</h3>
+                <p>Application de médiathèque de réserver et créer des objet et profils utilisateur</p>
+            </div>
+        </div>
+    </main>
 
-  <div class="grid">
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Doc Word piège — Rick Roll</h3>
-        <span class="badge badge-cyber">Cybersécurité</span>
-      </div>
-      <div class="divider"></div>
-      <p>Document Word malicieux qui déclenche automatiquement un Rick Roll à l'ouverture. La macro <code>Document_Open()</code> s'exécute sans aucune action de l'utilisateur et ouvre la vidéo YouTube dans le navigateur par défaut.</p>
-      <p>Réalisé suite à un exercice de mon professeur de cybersécurité. Illustre concrètement pourquoi les fichiers <code>.docm</code> reçus par e-mail sont considérés comme dangereux.</p>
-      <div class="tag-row">
-        <span class="tag">VBA</span>
-        <span class="tag">.docm</span>
-        <span class="tag">Macro Word</span>
-        <span class="tag">Shell / cmd.exe</span>
-      </div>
-      <a href="rickroll.docm" download class="btn">⬇ Télécharger le fichier</a>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Application de gestion de données</h3>
-        <span class="badge badge-web">Stage</span>
-      </div>
-      <div class="divider"></div>
-      <p>Demande de mon tuteur de stage chez Groupama. Application de gestion de tâches interne.</p>
-      <div class="tag-row"><span class="tag">En cours</span></div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Site sur la guerre de Cent Ans</h3>
-        <span class="badge badge-web">Web</span>
-      </div>
-      <div class="divider"></div>
-      <p>Site web présentant l'histoire de la guerre de Cent Ans.</p>
-      <div class="tag-row"><span class="tag">HTML/CSS</span></div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Base SQL avancée</h3>
-        <span class="badge badge-sql">Base de données</span>
-      </div>
-      <div class="divider"></div>
-      <p>Procédures stockées et triggers PL/SQL pour système d'information métier.</p>
-      <div class="tag-row">
-        <span class="tag">PL/SQL</span>
-        <span class="tag">Triggers</span>
-        <span class="tag">Procédures</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Site de candidature de stage</h3>
-        <span class="badge badge-web">Front-end</span>
-      </div>
-      <div class="divider"></div>
-      <p>Page de candidature de stage — interface front-end uniquement.</p>
-      <div class="tag-row">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Front-end</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Mamédithèque — Site PHP</h3>
-        <span class="badge badge-php">Back-end</span>
-      </div>
-      <div class="divider"></div>
-      <p>Site de médiathèque permettant de réserver des objets et de gérer des profils utilisateur.</p>
-      <div class="tag-row">
-        <span class="tag">PHP</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">CRUD</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Mamédithèque — Application Java</h3>
-        <span class="badge badge-java">Application</span>
-      </div>
-      <div class="divider"></div>
-      <p>Application de médiathèque permettant de réserver des objets et de gérer des profils utilisateur.</p>
-      <div class="tag-row">
-        <span class="tag">Java</span>
-        <span class="tag">POO</span>
-      </div>
-    </div>
-
-  </div>
-
+    <footer>
+        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
