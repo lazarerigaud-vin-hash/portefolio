@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Portfolio Lazare Rigaud-Vin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Mon CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Contactez-moi</h1>
-        <div class="contact-info">
-            <p><strong>Location :</strong> Niort, France</p>
-            <p><strong>Email : lazare.rigaud-vin@veniseverteniort.org</strong> </p>
-            <p><strong>GitHub :</strong> https://github.com/lazarerigaud-vin-hash</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">LRV</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-tag">Me contacter</p>
+    <h1>Contact</h1>
+    <p>Vous souhaitez en savoir plus sur mon profil ou mon travail ? N'hésitez pas à m'écrire.</p>
+  </div>
+</div>
+
+<main>
+<div class="container">
+<div class="contact-layout">
+
+  <div class="contact-info">
+    <h2>Parlons développement</h2>
+    <p>Étudiant en BTS SIO option SLAM, je suis à la recherche d'opportunités d'alternance ou d'emploi dans le développement logiciel. N'hésitez pas à me contacter pour discuter de projets, d'opportunités ou simplement pour échanger.</p>
+
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div>
+          <strong style="color:var(--navy); font-size:0.88rem; display:block;">Localisation</strong>
+          <span>Niort, Nouvelle-Aquitaine (79)</span>
         </div>
-    </main>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">🎓</div>
+        <div>
+          <strong style="color:var(--navy); font-size:0.88rem; display:block;">Formation</strong>
+          <span>BTS SIO SLAM — Lycée La Venise Verte, Niort</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">💼</div>
+        <div>
+          <strong style="color:var(--navy); font-size:0.88rem; display:block;">Stage réalisé</strong>
+          <span>Groupama Centre-Atlantique · Mai–Juin 2025</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">🐙</div>
+        <div>
+          <strong style="color:var(--navy); font-size:0.88rem; display:block;">GitHub</strong>
+          <a href="https://github.com/lazarerigaud-vin-hash" target="_blank" rel="noopener" style="color:var(--accent); font-size:0.9rem;">github.com/lazarerigaud-vin-hash</a>
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
-    </footer>
+    <div style="margin-top:2rem;">
+      <a href="competences.html" class="btn btn-primary">Voir mon CV</a>
+    </div>
+
+    <div style="margin-top:3rem; padding:1.5rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius);">
+      <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:500;">Compétences clés</p>
+      <div class="tag-row">
+        <span class="tag">Java</span>
+        <span class="tag">PHP / MySQL</span>
+        <span class="tag">C# / ASP.NET</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">HTML / CSS</span>
+        <span class="tag">Python</span>
+        <span class="tag">Entity Framework</span>
+        <span class="tag">Cybersécurité</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h3 style="font-size:1.25rem; color:var(--navy); margin-bottom:1.5rem;">Envoyer un message</h3>
+    <div class="form-group">
+      <label>Votre nom</label>
+      <input type="text" placeholder="Prénom Nom">
+    </div>
+    <div class="form-group">
+      <label>Votre email</label>
+      <input type="email" placeholder="vous@exemple.com">
+    </div>
+    <div class="form-group">
+      <label>Sujet</label>
+      <input type="text" placeholder="Objet de votre message">
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea rows="5" placeholder="Votre message..."></textarea>
+    </div>
+    <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="handleSend()">Envoyer →</button>
+    <div id="send-confirm" style="display:none; margin-top:1rem; padding:0.75rem 1rem; background:#d1fae5; border:1px solid #6ee7b7; border-radius:var(--radius-sm); font-size:0.88rem; color:#065f46;">
+      ✅ Message envoyé ! (formulaire de démonstration — portfolio BTS SIO)
+    </div>
+    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:1rem; text-align:center;">Ce formulaire est une démonstration dans le cadre du portfolio BTS SIO.</p>
+  </div>
+
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2025 Lazare Rigaud-Vin · BTS SIO SLAM</span>
+    <span>Lycée La Venise Verte · Niort</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('open');
+  });
+
+  function handleSend() {
+    document.getElementById('send-confirm').style.display = 'block';
+  }
+</script>
 </body>
 </html>

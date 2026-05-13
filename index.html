@@ -1,33 +1,164 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lazare Rigaud-Vin — Portfolio BTS SIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Mon CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="hero">
-        <h1>Lazare Rigaud-Vin</h1>
-        <p>Étudiant en BTS SIO - Spécialité SLAM</p>
-        <p>Développeur web passionné par Java, SQL et les applications métiers.</p>
-        <a href="parcours.html" class="btn">Découvrir mon parcours</a>
-    </main>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">LRV</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link active">Accueil</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
-    </footer>
+<main>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">BTS SIO · Option SLAM · 2025</span>
+      <h1 class="hero-name">Lazare<br><em>Rigaud-Vin</em></h1>
+      <p class="hero-desc">Étudiant en développement logiciel, passionné par la conception d'applications métier, les bases de données et la programmation orientée objet.</p>
+      <div class="hero-cta">
+        <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+        <a href="stage.html" class="btn btn-ghost">Rapport de stage</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <pre class="code-snippet"><span class="c-key">public class</span> <span class="c-cls">Demande</span> {
+  <span class="c-key">public int</span> Id { <span class="c-key">get</span>; <span class="c-key">set</span>; }
+  <span class="c-key">public string</span> Nom { <span class="c-key">get</span>; <span class="c-key">set</span>; }
+  <span class="c-key">public string</span> Statut { <span class="c-key">get</span>; <span class="c-key">set</span>; }
+  <span class="c-key">public DateTime</span> Date { <span class="c-key">get</span>; <span class="c-key">set</span>; }
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-skills-preview">
+    <div class="container">
+      <h2 class="section-label">Stack technique</h2>
+      <div class="skills-grid">
+        <div class="skill-chip">
+          <span class="skill-icon">⚙️</span>
+          <span>C# / ASP.NET</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🗄️</span>
+          <span>SQL Server</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">☕</span>
+          <span>Java / POO</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🐘</span>
+          <span>PHP / MySQL</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🌐</span>
+          <span>HTML / CSS</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🔒</span>
+          <span>Cybersécurité</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🐍</span>
+          <span>Python</span>
+        </div>
+        <div class="skill-chip">
+          <span class="skill-icon">🛠️</span>
+          <span>Visual Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-highlights">
+    <div class="container">
+      <h2 class="section-label">Points clés</h2>
+      <div class="cards-row">
+        <div class="hl-card">
+          <div class="hl-num">7</div>
+          <div class="hl-txt">Projets réalisés en formation et en stage</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num">5 sem.</div>
+          <div class="hl-txt">Stage chez Groupama Centre-Atlantique à Niort</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num">SLAM</div>
+          <div class="hl-txt">Spécialité Solutions Logicielles et Applications Métier</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-featured">
+    <div class="container">
+      <h2 class="section-label">Projet phare — Stage Groupama</h2>
+      <div class="featured-card">
+        <div class="featured-text">
+          <span class="badge badge-stage">Stage · 2025</span>
+          <h3>Application de gestion de demandes</h3>
+          <p>Développement d'un outil interne de gestion du cycle de vie des projets informatiques chez Groupama Centre-Atlantique. Architecture ASP.NET Razor Pages, base de données SQL Server, modèle Demande.cs connecté via Entity Framework.</p>
+          <div class="tag-row">
+            <span class="tag">C#</span>
+            <span class="tag">ASP.NET</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Entity Framework</span>
+            <span class="tag">Razor Pages</span>
+          </div>
+          <a href="stage.html" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Voir le détail du stage</a>
+        </div>
+        <div class="featured-side">
+          <div class="company-badge">
+            <div class="company-logo-placeholder">GCA</div>
+            <div>
+              <strong>Groupama Centre-Atlantique</strong>
+              <p>Niort, France · Mai–Juin 2025</p>
+            </div>
+          </div>
+          <div class="tech-stack-mini">
+            <div class="tsm-item">Visual Studio 2022</div>
+            <div class="tsm-item">SQL Server Management Studio</div>
+            <div class="tsm-item">Blazor / Razor</div>
+            <div class="tsm-item">Entity Framework Core</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2025 Lazare Rigaud-Vin · BTS SIO SLAM</span>
+    <span>Lycée La Venise Verte · Niort</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

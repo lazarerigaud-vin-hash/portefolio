@@ -1,34 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcours - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcours — Portfolio Lazare Rigaud-Vin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html" class="active">Parcours</a></li>
-                <li><a href="competences.html">Mon CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Mon Parcours</h1>
-        <ul class="parcours-list">
-            <li>Étudiant BTS SIO au Lycée la venise verte.</li>
-            <li>Formation en développement web (PHP, html, visual studio, python), Java Swing et bases de données SQL/PL-SQL.</li>
-        </ul>
-    </main>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">LRV</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="parcours.html" class="nav-link active">Parcours</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
-    </footer>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-tag">Mon histoire</p>
+    <h1>Mon <em style="font-style:italic; color: rgba(255,255,255,0.75);">Parcours</em></h1>
+    <p>Formation, stages et expériences qui m'ont conduit vers le développement logiciel.</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+
+    <div class="section-label" style="padding-top:3rem;">Formation</div>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-date">2023 –<br>2025</div>
+        <div class="tl-content">
+          <h3>BTS SIO — option SLAM</h3>
+          <p class="tl-org">Lycée La Venise Verte · Niort (79)</p>
+          <p>Spécialité Solutions Logicielles et Applications Métier. Formation aux langages de programmation (Java, PHP, Python, C#), aux bases de données relationnelles (SQL, PL/SQL), au développement web (HTML/CSS) et à la cybersécurité applicative.</p>
+          <div class="tag-row" style="margin-top:0.75rem;">
+            <span class="tag">Java</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL / PL-SQL</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Python</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2020 –<br>2023</div>
+        <div class="tl-content">
+          <h3>Baccalauréat Général</h3>
+          <p class="tl-org">Lycée · Niort</p>
+          <p>Spécialités Mathématiques et Numérique & Sciences Informatiques (NSI). Première approche de la programmation avec Python et des algorithmes fondamentaux.</p>
+          <div class="tag-row" style="margin-top:0.75rem;">
+            <span class="tag">Python</span>
+            <span class="tag">Algorithmes</span>
+            <span class="tag">Mathématiques</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label">Expériences professionnelles</div>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-date">Mai –<br>Juin 2025</div>
+        <div class="tl-content">
+          <h3>Développeur stagiaire</h3>
+          <p class="tl-org">Groupama Centre-Atlantique · Niort (79)</p>
+          <p>Stage de 5 semaines au sein de la DSI, équipe de développement nord. Mission : conception et développement partiel d'une application web de gestion de demandes et projets informatiques, en remplacement d'outils disparates (ServiceNow, Teams, Microsoft Project).</p>
+          <p>Technologies utilisées : C# / ASP.NET Razor Pages, SQL Server, Entity Framework Core, Visual Studio 2022. Autoformation préalable sur la chaîne YouTube de mon tuteur (C#, sécurité ASP.NET).</p>
+          <div class="tag-row" style="margin-top:0.75rem;">
+            <span class="tag">C# / ASP.NET</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">Entity Framework</span>
+            <span class="tag">Razor Pages</span>
+            <span class="tag">Visual Studio</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label">Compétences transverses</div>
+    <div class="cards-row" style="padding-bottom: 5rem;">
+      <div class="hl-card" style="border-left: 3px solid var(--accent);">
+        <div style="font-size:1.5rem; margin-bottom:0.5rem;">🧩</div>
+        <strong style="color:var(--navy); font-size:0.95rem; font-family:'DM Serif Display',serif;">Autonomie</strong>
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.4rem;">Capable d'apprendre de nouveaux langages et outils de manière autonome, notamment via la documentation et les ressources en ligne.</p>
+      </div>
+      <div class="hl-card" style="border-left: 3px solid var(--gold);">
+        <div style="font-size:1.5rem; margin-bottom:0.5rem;">🔎</div>
+        <strong style="color:var(--navy); font-size:0.95rem; font-family:'DM Serif Display',serif;">Rigueur</strong>
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.4rem;">Approche méthodique : décomposition des tâches, résolution des blocages par étapes, documentation du travail réalisé.</p>
+      </div>
+      <div class="hl-card" style="border-left: 3px solid #28c840;">
+        <div style="font-size:1.5rem; margin-bottom:0.5rem;">🤝</div>
+        <strong style="color:var(--navy); font-size:0.95rem; font-family:'DM Serif Display',serif;">Travail en équipe</strong>
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.4rem;">Intégration dans une équipe professionnelle de 7 développeurs, communication régulière avec le tuteur de stage, adaptation aux standards de l'entreprise.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2025 Lazare Rigaud-Vin · BTS SIO SLAM</span>
+    <span>Lycée La Venise Verte · Niort</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

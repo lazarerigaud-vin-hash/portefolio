@@ -1,46 +1,284 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences — Portfolio Lazare Rigaud-Vin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html" class="active">Mon CV</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-    <h1> </h1>
-    
-    <section class="cv-section">
-        <h2>Mon CV Détaillé</h2>
-        <p>Visualisez mon CV BTS SIO directement en ligne :</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">LRV</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="competences.html" class="nav-link active">Compétences</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
 
-        <iframe
-            src="CV-LRV-BTSIO-2025.pdf"
-            width="100%"
-            height="700px"
-            style="border: 1px solid #ccc; border-radius: 10px; max-width: 900px;">
-        </iframe>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-tag">Savoir-faire</p>
+    <h1>Mes <em style="font-style:italic; color:rgba(255,255,255,0.75);">Compétences</em></h1>
+    <p>Compétences techniques et transverses acquises en formation BTS SIO et en stage professionnel.</p>
+  </div>
+</div>
 
-        <p>
-            <a href="CV-LRV-BTSIO-2025.pdf" download class="btn">Télécharger PDF</a>
-        </p>
-    </section>
+<main>
+<div class="container" style="padding-bottom: 5rem;">
+
+  <div class="section-label" style="padding-top:3rem;">Mon CV</div>
+  <div class="cv-section" style="padding-top:0;">
+    <p>Téléchargez ou consultez mon CV BTS SIO directement ci-dessous.</p>
+    <iframe class="cv-frame" src="CV-LRV-BTSIO-2025.pdf" title="CV Lazare Rigaud-Vin"></iframe>
+    <div class="cv-actions">
+      <a href="CV-LRV-BTSIO-2025.pdf" download class="btn btn-primary">⬇ Télécharger le PDF</a>
+    </div>
+  </div>
+
+  <div class="section-label">Langages & développement</div>
+  <div class="comp-grid">
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">☕</span>
+        <h4>Java</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Programmation orientée objet</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Java Swing (IHM)</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Collections & génériques</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">⚙️</span>
+        <h4>C# / .NET</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Fondamentaux C#</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>ASP.NET Razor Pages</span><span>50%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Entity Framework Core</span><span>45%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:45%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🐘</span>
+        <h4>PHP</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>PHP procédural & objet</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>CRUD MySQL</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Sessions & formulaires</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🐍</span>
+        <h4>Python</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Algorithmique de base</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Structures de données</span><span>55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Bases de données</div>
+  <div class="comp-grid">
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🗄️</span>
+        <h4>SQL & PL/SQL</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Requêtes SQL (SELECT, JOIN…)</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Procédures stockées PL/SQL</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Triggers</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🔷</span>
+        <h4>SQL Server / MySQL</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>SSMS (SQL Server)</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MySQL / PhpMyAdmin</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Modélisation (MCD, MLD)</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Web & outils</div>
+  <div class="comp-grid">
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🌐</span>
+        <h4>HTML / CSS</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>HTML sémantique</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>CSS & mise en page</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Responsive design</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🛠️</span>
+        <h4>Outils & environnements</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Visual Studio 2022</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>GitHub / Git</span><span>60%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>ServiceNow (portail ITSM)</span><span>40%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:40%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-card">
+      <div class="comp-card-head">
+        <span class="comp-icon">🔒</span>
+        <h4>Cybersécurité</h4>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>JWT / authentification API</span><span>45%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:45%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>ASP.NET Identity</span><span>40%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:40%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Macros VBA (risques)</span><span>55%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Compétences BTS SIO — référentiel</div>
+  <div class="comp-grid" style="margin-bottom:2rem;">
+    <div class="comp-card" style="border-left: 3px solid var(--accent);">
+      <strong style="color:var(--navy); font-size:0.9rem;">B1 — Support & mise à disposition</strong>
+      <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Gestion des incidents, support utilisateur (stage Groupama : ServiceNow, habilitations)</p>
+    </div>
+    <div class="comp-card" style="border-left: 3px solid var(--accent);">
+      <strong style="color:var(--navy); font-size:0.9rem;">B2 — Développement d'applications</strong>
+      <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Conception et développement (Java, PHP, C#/ASP.NET, projets école et stage)</p>
+    </div>
+    <div class="comp-card" style="border-left: 3px solid var(--accent);">
+      <strong style="color:var(--navy); font-size:0.9rem;">B3 — Cybersécurité</strong>
+      <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Sensibilisation aux risques (macro VBA malveillante, JWT, ASP.NET Identity)</p>
+    </div>
+    <div class="comp-card" style="border-left: 3px solid var(--accent);">
+      <strong style="color:var(--navy); font-size:0.9rem;">B4 — Gestion des données</strong>
+      <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Conception BDD, requêtes SQL avancées, PL/SQL, connexion ORM (Entity Framework)</p>
+    </div>
+  </div>
+
+</div>
 </main>
 
-    <footer>
-        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
-    </footer>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2025 Lazare Rigaud-Vin · BTS SIO SLAM</span>
+    <span>Lycée La Venise Verte · Niort</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

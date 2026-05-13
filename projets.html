@@ -1,120 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Portfolio Lazare Rigaud-Vin - BTS SIO</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Portfolio Lazare Rigaud-Vin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="competences.html">Mon CV</a></li>
-                <li><a href="projets.html" class="active">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Mes Projets</h1>
-<div class="card">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">LRV</a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="projets.html" class="nav-link active">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-tag">Réalisations</p>
+    <h1>Mes <em style="font-style:italic; color:rgba(255,255,255,0.75);">Projets</em></h1>
+    <p>Projets réalisés en BTS SIO, en stage et en autonomie.</p>
+  </div>
+</div>
+
+<main>
+<div class="container">
+
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap; padding-top:2.5rem; margin-bottom:-1rem;">
+    <button class="filter-btn active" data-filter="all">Tous</button>
+    <button class="filter-btn" data-filter="stage">Stage</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="sql">Base de données</button>
+    <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- STAGE GROUPAMA -->
+    <div class="project-card" data-cat="stage">
+      <div class="card-header">
+        <h3>Application de gestion de demandes</h3>
+        <span class="badge badge-stage">Stage</span>
+      </div>
+      <div class="divider"></div>
+      <p>Application web interne développée en stage chez Groupama Centre-Atlantique. Objectif : centraliser la gestion du cycle de vie des projets informatiques (de la demande à la mise en prod). Architecture ASP.NET Razor Pages, modèle Demande.cs, connexion SQL Server via Entity Framework, affichage dynamique via boucle <code>foreach</code> en Razor.</p>
+      <div class="tag-row">
+        <span class="tag">C#</span>
+        <span class="tag">ASP.NET</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Entity Framework</span>
+        <span class="tag">Razor Pages</span>
+        <span class="tag">Visual Studio</span>
+      </div>
+      <a href="stage.html" class="btn btn-ghost" style="margin-top:0.75rem;">Voir le rapport de stage</a>
+    </div>
+
+    <!-- SITE CANDIDATURE -->
+    <div class="project-card" data-cat="web">
+      <div class="card-header">
+        <h3>Site de candidature de stage</h3>
+        <span class="badge badge-web">Front-end</span>
+      </div>
+      <div class="divider"></div>
+      <p>Page web de candidature créée pour postuler à mon stage de BTS SIO. Interface front-end responsive réalisée en Next.js / TypeScript. Présente mes compétences, ma motivation et mes coordonnées de manière soignée. Hébergé sur GitHub.</p>
+      <div class="tag-row">
+        <span class="tag">Next.js</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">CSS</span>
+        <span class="tag">React</span>
+      </div>
+      <a href="https://github.com/lazarerigaud-vin-hash/candidature" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:0.75rem;">Voir sur GitHub →</a>
+    </div>
+
+    <!-- MAMEDITHÈQUE PHP -->
+    <div class="project-card" data-cat="web">
+      <div class="card-header">
+        <h3>Mamédithèque — Site PHP</h3>
+        <span class="badge badge-php">Back-end</span>
+      </div>
+      <div class="divider"></div>
+      <p>Application web de médiathèque permettant aux utilisateurs de réserver des livres, jeux ou films, et de gérer leurs profils. Développée en PHP avec une base de données MySQL, inclut les opérations CRUD complètes, la gestion des sessions et un système d'authentification utilisateur.</p>
+      <div class="tag-row">
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">CRUD</span>
+        <span class="tag">Sessions</span>
+        <span class="tag">HTML/CSS</span>
+      </div>
+    </div>
+
+    <!-- MAMEDITHÈQUE JAVA -->
+    <div class="project-card" data-cat="java">
+      <div class="card-header">
+        <h3>Mamédithèque — Application Java</h3>
+        <span class="badge badge-java">Application</span>
+      </div>
+      <div class="divider"></div>
+      <p>Application desktop Java (Java Swing) reprenant les fonctionnalités de gestion d'une médiathèque : réservation de ressources (livres, jeux, films), gestion des adhérents, recherche et filtrage. Application de la programmation orientée objet : héritage, polymorphisme, encapsulation.</p>
+      <div class="tag-row">
+        <span class="tag">Java</span>
+        <span class="tag">Java Swing</span>
+        <span class="tag">POO</span>
+        <span class="tag">Héritage</span>
+      </div>
+    </div>
+
+    <!-- BASE SQL -->
+    <div class="project-card" data-cat="sql">
+      <div class="card-header">
+        <h3>Base SQL avancée</h3>
+        <span class="badge badge-sql">Base de données</span>
+      </div>
+      <div class="divider"></div>
+      <p>Conception et implémentation d'une base de données relationnelle avec procédures stockées et triggers PL/SQL pour un système d'information métier. Travaux sur la modélisation (MCD, MLD), l'intégrité référentielle, les index, et les requêtes complexes (jointures, sous-requêtes, agrégations).</p>
+      <div class="tag-row">
+        <span class="tag">PL/SQL</span>
+        <span class="tag">Triggers</span>
+        <span class="tag">Procédures stockées</span>
+        <span class="tag">MCD / MLD</span>
+      </div>
+    </div>
+
+    <!-- SITE CENT ANS -->
+    <div class="project-card" data-cat="web">
+      <div class="card-header">
+        <h3>Site sur la guerre de Cent Ans</h3>
+        <span class="badge badge-web">Web</span>
+      </div>
+      <div class="divider"></div>
+      <p>Site web informatif et structuré présentant l'histoire de la guerre de Cent Ans. Réalisé en HTML et CSS, il illustre la maîtrise de la mise en page, de la hiérarchie typographique et de la navigation entre pages. Projet d'initiation au développement web front-end.</p>
+      <div class="tag-row">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Structure web</span>
+      </div>
+    </div>
+
+    <!-- RICKROLL -->
+    <div class="project-card" data-cat="cyber">
       <div class="card-header">
         <h3>Doc Word piège — Rick Roll</h3>
         <span class="badge badge-cyber">Cybersécurité</span>
       </div>
       <div class="divider"></div>
-      <p>Document Word malicieux qui déclenche automatiquement un Rick Roll à l'ouverture. La macro <code>Document_Open()</code> s'exécute sans aucune action de l'utilisateur et ouvre la vidéo YouTube dans le navigateur par défaut.</p>
-      <p>Réalisé suite à un exercice de mon professeur de cybersécurité. Illustre concrètement pourquoi les fichiers <code>.docm</code> reçus par e-mail sont considérés comme dangereux.</p>
+      <p>Document Word malicieux (<code>.docm</code>) qui déclenche automatiquement une macro VBA à l'ouverture du fichier. La macro <code>Document_Open()</code> s'exécute sans interaction utilisateur et ouvre une URL dans le navigateur. Réalisé comme exercice de sensibilisation : illustre concrètement pourquoi les fichiers Office reçus par email sont dangereux. L'utilisateur ne remarque rien jusqu'au déclenchement.</p>
+      <div class="info-box" style="margin-top:0.5rem; margin-bottom:0;">
+        ⚠️ Projet éducatif uniquement — sensibilisation aux risques des macros Office
+      </div>
       <div class="tag-row">
         <span class="tag">VBA</span>
         <span class="tag">.docm</span>
         <span class="tag">Macro Word</span>
         <span class="tag">Shell / cmd.exe</span>
       </div>
-      <a href="rickroll.docm" download class="btn">⬇ Télécharger le fichier</a>
+      <a href="rickroll.docm" download class="btn btn-ghost" style="margin-top:0.75rem;">⬇ Télécharger (usage éducatif)</a>
     </div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Application de gestion de données</h3>
-        <span class="badge badge-web">Stage</span>
-      </div>
-      <div class="divider"></div>
-      <p>Demande de mon tuteur de stage chez Groupama. Application de gestion de tâches interne.</p>
-      <div class="tag-row"><span class="tag">En cours</span></div>
-    </div>
+  </div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Site sur la guerre de Cent Ans</h3>
-        <span class="badge badge-web">Web</span>
-      </div>
-      <div class="divider"></div>
-      <p>Site web présentant l'histoire de la guerre de Cent Ans.</p>
-      <div class="tag-row"><span class="tag">HTML/CSS</span></div>
-    </div>
+</div>
+</main>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Base SQL avancée</h3>
-        <span class="badge badge-sql">Base de données</span>
-      </div>
-      <div class="divider"></div>
-      <p>Procédures stockées et triggers PL/SQL pour système d'information métier.</p>
-      <div class="tag-row">
-        <span class="tag">PL/SQL</span>
-        <span class="tag">Triggers</span>
-        <span class="tag">Procédures</span>
-      </div>
-    </div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© 2025 Lazare Rigaud-Vin · BTS SIO SLAM</span>
+    <span>Lycée La Venise Verte · Niort</span>
+  </div>
+</footer>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Site de candidature de stage</h3>
-        <span class="badge badge-web">Front-end</span>
-      </div>
-      <div class="divider"></div>
-      <p>Page de candidature de stage — interface front-end uniquement.</p>
-      <div class="tag-row">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Front-end</span>
-      </div>
-    </div>
+<style>
+.filter-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.82rem;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.project-card.hidden { display: none; }
+</style>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Mamédithèque — Site PHP</h3>
-        <span class="badge badge-php">Back-end</span>
-      </div>
-      <div class="divider"></div>
-      <p>Site de médiathèque permettant de réserver des objets et de gérer des profils utilisateur.</p>
-      <div class="tag-row">
-        <span class="tag">PHP</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">CRUD</span>
-      </div>
-    </div>
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('open');
+  });
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Mamédithèque — Application Java</h3>
-        <span class="badge badge-java">Application</span>
-      </div>
-      <div class="divider"></div>
-      <p>Application de médiathèque permettant de réserver des objets et de gérer des profils utilisateur.</p>
-      <div class="tag-row">
-        <span class="tag">Java</span>
-        <span class="tag">POO</span>
-      </div>
-    </div>
-    </main>
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
 
-    <footer>
-        <p>&copy; 2026 Lazare Rigaud-Vin - BTS SIO. Tous droits réservés.</p>
-    </footer>
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(c => {
+        if (f === 'all' || c.dataset.cat === f) {
+          c.classList.remove('hidden');
+        } else {
+          c.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
