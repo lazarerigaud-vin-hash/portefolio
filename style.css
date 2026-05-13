@@ -90,7 +90,7 @@ img { max-width: 100%; }
 .nav-link {
   font-size: 0.9rem;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: black;
   padding: 0.4rem 0.85rem;
   border-radius: var(--radius-sm);
   transition: all 0.15s;
