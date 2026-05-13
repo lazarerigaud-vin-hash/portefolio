@@ -96,8 +96,8 @@ img { max-width: 100%; }
   transition: all 0.15s;
 }
 
-.nav-link:hover { color: var(--text); background: var(--border-light); }
-.nav-link.active { color: var(--accent); font-weight: 500; background: var(--accent-pale); }
+.nav-link:hover { color: black ; background: var(--border-light); }
+.nav-link.active { color: black ; font-weight: 500; background: var(--accent-pale); }
 
 .nav-toggle {
   display: none;
